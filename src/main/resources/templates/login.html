@@ -18,12 +18,15 @@
  <div>
 	<div class="row mt-5"> <!-- mt=margin-top -->
 		<div class="col-md-6 offset-md-3">
+		<td><h4 th:text="${userr}"></h4></td>    
+      <td><h4 th:text="${userrandom}"></h4></td> 
 		<form action="logincheck">
-		<div class="mb-3">
-    <label for="email" class="form-label">UserName</label>
-    <input type="email" class="form-control" name="th:text="${userrandom}"" required="required">
-    <div id="emailHelp" class="form-text">We'll never share your email with anyone else.</div>
+		<tr>    
+     <div class="mb-3">
+       <input type="text" class="form-control" name="uname" th:value ="${userrandom}">
   </div>
+      
+     </tr>    
   <div class="mb-3">
     <label for="email" class="form-label">Email address</label>
     <input type="email" class="form-control" name="email" required="required">
